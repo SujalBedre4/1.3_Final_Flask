@@ -1,6 +1,5 @@
 from sqlalchemy import create_engine, text
-import os
-db_connection_string = os.environ['DB_FLASK_STRING']
+db_connection_string = "mysql+mysqldb://2MarNVgMbkgBoNS.root:RnQDXvM0Zs4GT2DS@gateway01.ap-southeast-1.prod.aws.tidbcloud.com:4000/test?ssl_mode=VERIFY_IDENTITY&ssl_ca=/etc/ssl/certs/ca-certificates.crt"
 
 engine = create_engine(db_connection_string)
 # We are connecting this page with the another one.
